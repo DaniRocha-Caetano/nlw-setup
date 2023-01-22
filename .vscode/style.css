@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8abd7a;
+  color: black;
+
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #8abd7a;
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: #002d00;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "Gloria Hallelujah";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+#form-habits {
+  display: flex;
+
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+.habit {
+  border: 1px solid none;
+
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+
+  color: black;
+
+  text-align: center;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #0e1f0b;
+  border-radius: 8px;
+
+  background: #f7f7f7;
+}
+
+input:checked {
+  background: #9ae741;
+  border: 2px solid #85e76e;
+}
+
+@media (max-widht: 570px) {
+  button div {
+    display: none;
+  }
+}
